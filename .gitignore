@@ -1,0 +1,43 @@
+# =======================================================================
+# MATLAB and Simulink Git Ignore Template
+# =======================================================================
+
+# Autosave and Backup Files
+*.asv
+*.m~
+*.autosave
+*.bak
+
+# Simulink Backup & Autosave
+*.slx.r*
+*.mdl.r*
+*.slx.original
+*.mdl.original
+
+# Compiled MEX binaries (All platforms)
+*.mex*
+
+# Packaged App and Toolbox Files
+*.mlappinstall
+*.mltbx
+
+# Deployable Archives (MATLAB Compiler)
+*.ctf
+
+# Generated Documentation Search Folders
+helpsearch*/
+
+# Code Generation Folders (Simulink Coder / MATLAB Coder)
+slprj/
+sccprj/
+codegen/
+
+# Cache and Workspace Files
+*.slxc
+*.mexw64
+*.mexa64
+*.mexmaci64
+octave-workspace
+
+# Cloud Storage Tags
+.MATLABDriveTag
