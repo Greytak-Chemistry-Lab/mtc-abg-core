@@ -12,7 +12,7 @@
 
 % use this approach to load example data in a platform-independent way
 datadir=fullfile(getpref('greytaklab','customtoolboxpath'), ...
-    'mtc-abg-core','example_data','HCl_vibrational_overtone');
+    'mtc-abg-core/og','example_data','HCl_vibrational_overtone');
 filename='HCl-cary-overtone-spec-group2-spring-2020-sbw-0p6.csv';
 
 A=importdata(fullfile(datadir,filename));
