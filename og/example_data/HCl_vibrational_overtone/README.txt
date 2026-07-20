@@ -1,0 +1,1 @@
+This data is the absorbance of a saturated HCl vapor recorded over a 100 mm pathlength at the first vibrational overtone, showing rotational fine structure. Recorded as part of the HCl ro-vibrational spectroscopy experiment for Chem 542L using the Cary 5000 UV-vis-NIR spectrometer. Data is in columns 3 and 4. 
