@@ -34,9 +34,9 @@ setup_abg()
 % subfolder called 'functions' where executable functions live. It does not
 % add subfolders, except for 'functions/colormaps'. If you want to add
 % other custom folders, specify it as a separate toolbox string.
-setup_abg('mtc-abg-core')
+setup_abg('mtc-abg-core/og')
 
-% setup_abg('mtc-abs-emis','mtc-itc')
+% setup_abg('mtc-abs-emis/og','mtc-itc/og')
 
 % Modify and uncomment below to add a personal "sandbox" with your own
 % additions and experiments.
