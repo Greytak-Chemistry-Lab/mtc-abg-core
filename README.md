@@ -1,6 +1,10 @@
 # matlab toolbox for chemists: Greytak research group
 
-This repository contains core functions and setup instructions for the Greytak lab's "matlab toolbox for chemists", and some example data (an infrared spectrum of hydrogen chloride). It is designed to work alongside various other "mtc" toolboxes that expand it, such as "mtc-abs-emis" for (primarily UV-vis and PL) spectroscopy, and "mtc-itc" for isothermal titration calorimetry planning and data analysis (coming soon).
+This repository contains core functions and setup instructions for the Greytak lab's "matlab toolbox for chemists" (mtc), and some example data (an infrared spectrum of hydrogen chloride). It is designed to work alongside various other "mtc" toolboxes that expand it, such as "mtc-abs-emis" for (primarily UV-vis and PL) spectroscopy, and "mtc-itc" for isothermal titration calorimetry planning and data analysis (coming soon).
+
+See also our "Matlab chemist's tutorial", which is meant as an introduction to Matlab and does not depend on the custom functions in the mtc.
+
+For more information about our laboratory see the Greytak Chemisty Lab's [GitHub Pages site](https://greytak-chemistry-lab.github.io), or our group website.
 
 ## Our approach to toolbox layout
 
