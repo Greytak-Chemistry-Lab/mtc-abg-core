@@ -1,5 +1,6 @@
+# The .gitignore for this repo will have 3 parts 
 # =======================================================================
-# MATLAB and Simulink Git Ignore Template
+# 1. MATLAB and Simulink Git Ignore Template (from Github via Google Gemini)
 # =======================================================================
 
 # Autosave and Backup Files
@@ -41,3 +42,32 @@ octave-workspace
 
 # Cloud Storage Tags
 .MATLABDriveTag
+
+# =======================================================================
+# 2. Microsoft Office autosave and lock files (suggested by Google Gemini)
+# =======================================================================
+
+# Microsoft Word lock files
+~$*.docx
+~$*.doc
+
+# Microsoft Excel lock files
+~$*.xlsx
+~$*.xls
+
+# Microsoft PowerPoint lock files
+~$*.pptx
+~$*.ppt
+
+
+# =======================================================================
+# 3. Output data from example runs (specified manually: example scripts 
+#    should be edited where necessary to respect this)
+# =======================================================================
+
+# Absolute path (should ignore this folder as specified from the root level)
+/og/example_data/output
+
+# Relative path (should ignore the entire folder and all contents, anywhere in the repo)
+example_data/output
+
