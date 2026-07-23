@@ -4,7 +4,7 @@ This repo contains essential tools on which other components of the Greytak lab 
 These include the functions and custom colormap in functions and functions/colormaps, and several 
 files in templates/startup_dont_add_to_path that you will want to copy into your MATLAB settings folder,
 rather than calling from this repo. The startup_template.m file will need to be renamed to startup.m 
-after copying there, and modified as necessary to suit your Matlab installation and file layout on your
+after copying there, and modified as necessary to suit your Matlab installation and the file layout on your
 computer.
 
 ## We are revising our approach to code management, and you can help!
@@ -13,21 +13,17 @@ If you are reading this elsewhere, please be aware this guide is now maintained 
 
 The Greytak lab uses Matlab for a variety of purposes, such as rapid plotting and analysis of UV-visible absorbance and photoluminescence emission spectra.
 
-This guide describes how we use revision control to manage, improve, and distribute Matlab code developed for use with our group. For a more general introduction to using Matlab for plotting, calculations, and programming, please see the tutorial [here](github.com/Greytak-Chemistry-Lab/matlab-chemists-tutorial)
+This guide describes how we use revision control to manage, improve, and distribute Matlab code developed for use with our group. 
+- For a more general introduction to using Matlab for plotting, calculations, and programming (using built-in Matlab commands), please see the tutorial [here](github.com/Greytak-Chemistry-Lab/matlab-chemists-tutorial).
+- For a general discussion of repository organization within the [Greytak Chemistry Lab](https://greytak-chemistry-lab.github.io) on GitHub, see the README.md at the root level of this repository. 
 
-## What we have
+## What we have: mtc toolboxes
 
--	mtc-abg-core: includes startup script template, illustrates layout, hosts some overall documentation, and includes some low-level functions like ev() and yvsxf() as a starting point and as a demonstration of our approach. Also includes custom colormap definitions used by several of the other repos.
--	mtc-abs-emis: (coming soon) UV-vis and PL spectroscopy tools based on structures returned by qysetup() that have fields for absorbance and emission data, and several metadata fields including a flexible "extra" field.
--	mtc-itc: (coming soon) Tools for predicting and fitting isothermal titration calorimetry isotherms
--	mtc-getpKa: (coming soon) Tools for determining equilibrium constants from UV-vis data, especially for determining pKa and conjugate acid/base form spectra. Depends on mtc-abs-emis
+-	_mtc-abg-core_: (this repo) includes startup script template, illustrates layout, hosts some overall documentation, and includes some low-level functions like ev() and yvsxf() as a starting point and as a demonstration of our approach. Also includes custom colormap definitions used by several of the other repos.
+-	_mtc-abs-emis_: (coming soon) UV-vis and PL spectroscopy tools based on structures returned by qysetup() that have fields for absorbance and emission data, and several metadata fields including a flexible "extra" field.
+-	_mtc-itc_: (coming soon) Tools for predicting and fitting isothermal titration calorimetry isotherms
+-	_mtc-getpKa_: (coming soon) Tools for determining equilibrium constants from UV-vis data, especially for determining pKa and conjugate acid/base form spectra. Depends on mtc-abs-emis.
 
-## Within each toolbox 
-
-See the README.md at the root level of this repo for a discussion of:
-
-- our philosophy on "variations" and "versions" within each project repository
-- the layout of folders for each instance of the project:
 
 ## Initial setup
 
@@ -35,7 +31,7 @@ See the README.md at the root level of this repo for a discussion of:
 
 The first time you run it, it will create a folder called "MATLAB" (appears in your Documents folder in Windows: its location on disk is returned by “userpath” within Matlab). This is your personal matlab startup folder and is automatically added to your matlab path (search path it uses to look for functions when you type a command). 
 
-- Matlab install tips here: Go to the UofSC affiliated MathWorks link (the link is in here). Click the ‘Sign in to get started’ button, it will lead to a page where you can provide your UofSC credentials and sign in. Upon completion this, it will tell you to ‘Sign in to your existing MathWorks Account’. If you have not created a MathWorks account yet, create your own Mathworks account. Then return to the previous page and ‘Sign in to your existing MathWorks Account’ using your email and the password that you used to open your MathWorks account. Then it will give you the option to download the MATLAB versions released in recent and previous years. In general, R2022a = MATLAB version released in Spring 2022, R2022b = MATLAB version released in Fall 2022.  
+- Matlab install tips here: Go to the UofSC affiliated MathWorks link. Click the ‘Sign in to get started’ button, it will lead to a page where you can provide your UofSC credentials and sign in. Upon completion this, it will tell you to ‘Sign in to your existing MathWorks Account’. If you have not created a MathWorks account yet, create your own Mathworks account. Then return to the previous page and ‘Sign in to your existing MathWorks Account’ using your email and the password that you used to open your MathWorks account. Then it will give you the option to download the MATLAB versions released in recent and previous years. In general, R2022a = MATLAB version released in Spring 2022, R2022b = MATLAB version released in Fall 2022.  
 - Once you have setup and linked your account, you may download, install, and activate any previous version of Matlab. Particularly useful ones are Matlab 2015b (last 32 bit release, needed for ActiveX controls for Thorlabs motors using APT), and Matlab 2021a (64-bit, last release that had both “increment and run” and the Help reports in the current folder drop-down menu).
 
 ### Install Git
@@ -80,7 +76,7 @@ The "Matlab Toolbox for Chemists" is not set up as a real Matlab Toolbox. Instea
 	- functions/colormaps: a folder with a series of functions that return colormaps of a desired length (default=256 levels), with some useful properties. Type "help mtc-abg-core/og/functions/colormaps" to see a description. 'redbluemap' is great for color maps of data that might be positive or negative.
 - templates: besides the startup files to copy, it contains:
 	- demo_for_eV_and_yvsxf.m: a template illustrating how to use ev.m and yvsxf.m to work with a representative spectrum, here, a low-resolution spectrum of gas-phase hydrogen chloride at the first vibrational overtone. Our toolboxes will usually have a template script illustrating how to use some of its capabilities. We presume that you would copy this template *outside of the repository* and modify it as needed to look at particular samples and preparing the graphics you want, while continuing to call the functions from the repo(s), which should normally only need editing to fix bugs or add features.
-- example_data: out toolboxes usually come with some representative data for the templates to look at
+- example_data: our toolboxes usually come with some representative data for the templates to look at
 	- HCl_vibrational_overtone: A subfolder with a CSV file with data, and a README.txt accompanying to explain what it is. It's nice to contain the dataset in a subfolder, so that we could have multiple example data sets in the future without them getting mixed up.
 	
 ### Getting help
@@ -90,7 +86,7 @@ To the extent possible, our tools are documented internally, using the help bloc
 - For one function or script: "help functionname" will print the help block for the function, as long as it is somewhere in your path. "See also" lines can appear as hyperlinks. Try "help yvsxf" or help "redmap"
 - You can also call help on a folder and it will print a list of all the .m files within it, and the first comment line (which should be a summary of what it is for): try "help 'mtc-abg-core/og/functions'"
 - Earlier versions of Matlab includ the commands 'helprpt', 'dofixrpt', and 'deprpt' that can inspect help, comment lines flagging issues, and check dependencies on files or folders.
-- Ask us
+- Ask us! The worst we can do, if you are some random on the internet, is not respond. 
 
 
 
