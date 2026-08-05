@@ -43,5 +43,12 @@ mtc-abg-core/og ... as it was set up
 mtc-abg-core/fancy ... a variation with some improvements after bringing to Github (does not actually exist)
 mtc-abg-core/fancy-1.0 ... a tagged "version" of fancy that will be reasonably static except for bug fixes
 
+## Attribution and license
+
+> The "Matlab Toolbox for Chemists" is a project of the Greytak Chemistry Lab – `github.com/greytak-chemistry-lab/mtc-abg-core`
+>
+> Copyright Andrew B Greytak with applicable rights reserved by the University of South Carolina. Email: `greytak@sc.edu`.
+>
+> This repository is shared via the GPLv3.0 license. See `LICENSE` file for details.
 
 
