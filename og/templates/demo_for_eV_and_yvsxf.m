@@ -1,5 +1,5 @@
 % Demo script for loading data and using yvsxf
-%
+% within the "Matlab Toolbox for Chemists" developed by the Greytak lab at USC.
 % This script relies on functions in mtc-abg-core. 
 
 % Uncomment below to ensure those functions are added to your path, though,
@@ -54,3 +54,12 @@ my_energies=ev(my_wavelengths);
 my_abs_vs_eV_f=yvsxf(my_energies,my_absorbances);
 plot([0.68:0.0001:0.72],my_abs_vs_eV_f([0.68:0.0001:0.72]))
 title('Absorbance vs selected energies')
+
+
+
+
+% Attribution: Greytak Chemistry Laboratory - University of South Carolina.
+% Copyright Andrew B Greytak 20256 with applicable rights reserved by USC:
+% github.com/greytak-chemistry-lab/mtc-abg-core
+%
+% See mtc-abg-core/LICENSE file for details
