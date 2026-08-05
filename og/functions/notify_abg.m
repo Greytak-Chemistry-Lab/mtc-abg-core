@@ -35,3 +35,10 @@ end
 if(notification_level>=log_level)
     disp(notification_string)
 end
+
+
+% Attribution: Greytak Chemistry Laboratory - University of South Carolina.
+% Copyright Andrew B Greytak 2025 with applicable rights reserved by USC:
+% github.com/greytak-chemistry-lab/mtc-abg-core
+%
+% See mtc-abg-core/LICENSE file for license info
